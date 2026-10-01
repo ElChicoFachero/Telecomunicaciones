@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie de Fourier</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        canvas{
+            border: 2px solid black;
+            margin-top:20px;
+        }
+        input, button{
+            padding: 8px;
+            font-size:16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aproximacion de una onda cuadrada</h1>
+    <p> Ingresa el numero maximo de armonicos: </p>
+    <input type="number" id="armonicos" value="15" min="1" max="100"> 
+    <button id="boton"> Graficar</button>
+    <br><br>
+    <canvas id ="lienzo" width="1000" height="500"></canvas>
+    <script src="js/script.js"></script>
+</body>
+</html>
